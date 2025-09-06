@@ -9,19 +9,6 @@ function Newsletter({ mensagem, handleSubmit }) {
           Inscreva-se para receber atualizações sobre nossos drones e soluções agrícolas.
         </p>
 
-        <section className="pitch-video">
-          <h2>Confira nosso Projeto</h2>
-          <p>Assista ao nosso Pitch Vídeo e veja como o RuralConnect evoluiu nesta fase.</p>
-          <a href="https://youtube.com/SEU_VIDEO" target="_blank" rel="noopener noreferrer">
-            🎥 Assistir Pitch Vídeo
-          </a>
-          <br />
-          <a href="https://SEU_DEPLOY.netlify.app" target="_blank" rel="noopener noreferrer">
-            🌐 Acessar Site Online
-          </a>
-        </section>
-
-
         <form className="newsletter-form" onSubmit={handleSubmit}>
           <input
             type="email"
