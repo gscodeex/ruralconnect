@@ -282,3 +282,47 @@ li {
     font-size: 2.25rem;
   }
 }
+
+/* Pitch Vídeo */
+.pitch-video {
+  text-align: center;
+  padding: 20px 20px;
+  background: #f9f9f9; /* fundo leve para diferenciar do resto */
+}
+
+.pitch-video p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.pitch-video a {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #2ecc71; /* verde destaque */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pitch-video a:hover {
+  background-color: #27ae60; /* verde mais escuro no hover */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .pitch-video p {
+    font-size: 1rem;
+  }
+
+  .pitch-video a {
+    font-size: 0.9rem;
+    padding: 10px 22px;
+  }
+}
