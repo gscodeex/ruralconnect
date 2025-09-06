@@ -1,0 +1,284 @@
+:root {
+  --cor-escuro: #1b1b1b;
+  --gradiente: linear-gradient(90deg, #0f3d2e 0%, #167a3a 100%);
+  --sucesso: #167a3a;
+  --fundo-claro: #f2f5f7;
+  --texto-cinza: #3a3a3a;
+  --radius: 1rem;
+  --font-base: 'Inter', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  scroll-behavior: smooth;
+  padding: unset !important;
+}
+
+p,
+li {
+  color: var(--texto-cinza); 
+}
+
+/* Seções principais */
+#quem-somos, #aplicacoes, #contato {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+}
+
+#contato {
+  border-radius: 15px 15px 0 0;
+}
+
+#siga-nos {
+  background: #fafafa; 
+  border-radius: 15px;
+}
+#siga-nos h3 {
+  color: #1b1b1b;
+}
+
+/* Botões e Navbar */
+.btn-instagram {
+  color: #E4405F;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+}
+.btn-instagram:hover {
+  color: #C13584;
+}
+
+.btn-topo {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;               
+  z-index: 1000;
+  font-size: 2.5rem;
+  color: var(--sucesso);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+.btn-topo:hover {
+  transform: translateY(-4px);
+}
+
+.lead.mb-4{
+  color: #fff !important;
+}
+
+.bg-gradiente { 
+  background: var(--gradiente) !important; 
+} 
+
+.nav-link { 
+  color: #000000 !important;
+  font-weight: 500; 
+} 
+
+.nav-pills .nav-link {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #000 !important;
+}
+
+.navbar .nav-link:hover, 
+.nav-pills .nav-link.active, 
+.navbar .nav-link.active {
+  color: #33b85c !important;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link { 
+  background-color: #0f3d2e !important;
+}
+
+.btn-sucesso {
+  background: var(--sucesso) !important;
+  color: #fff !important;
+  border: none;
+}
+
+.shadow-sm {
+  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .15);
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url("/img/agro.jpeg") center/cover no-repeat;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.posicao-frente {
+  position: relative;
+  z-index: 1;
+}
+
+/* Seções */
+.titulo-secao {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--cor-escuro);
+}
+
+.texto-secao {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.bg-claro {
+  background: var(--fundo-claro);
+}
+
+/* Cartões */
+.cartao-solucao,
+.cartao-beneficio {
+  background: #fff;
+  border-radius: var(--radius);
+  transition: transform .3s;
+}
+
+.cartao-solucao:hover,
+.cartao-beneficio:hover {
+  transform: translateY(-6px);
+}
+
+.icone-solucao {
+  font-size: 2.5rem;
+  color: var(--sucesso);
+}
+
+/* Listas aplicação */
+.lista-aplicacao {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-aplicacao li {
+  margin-bottom: .75rem;
+  font-size: 1.05rem;
+}
+
+.lista-aplicacao i {
+  color: var(--sucesso);
+}
+
+/* Animação de revelação */
+.revela {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.revela.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Newsletter */
+.newsletter-section {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0; /* aba menor */
+}
+
+.newsletter-title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.newsletter-text {
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.newsletter-input {
+  max-width: 220px;
+  height: 35px;
+  padding: 0 0.5rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-btn {
+  height: 35px;
+  font-size: 0.85rem;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--sucesso);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-btn:hover {
+  background-color: #145a2c;
+}
+
+/* Mensagem de confirmação */
+.newsletter-msg {
+  margin-top: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.85rem;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-5px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-5px); }
+}
+
+/* Responsividade */
+@media(max-width:767px) {
+  .display-4 {
+    font-size: 2.25rem;
+  }
+}

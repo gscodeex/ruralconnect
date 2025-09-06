@@ -1,0 +1,70 @@
+:root {
+  --fundo-claro: #f2f5f7;
+  --sucesso: #167a3a;
+  --sucesso-claro: #33b85c;
+  --texto-cinza: #3a3a3a;
+  --radius: 1rem;
+  --font-base: 'Inter', sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: var(--font-base);
+  background: var(--fundo-claro);
+  padding-top:72px; /* compensa navbar fixa */
+}
+
+/* Navbar */
+.bg-gradiente { background: linear-gradient(90deg, #0f3d2e, #167a3a) !important; }
+.navbar-brand {
+  font-family: var(--font-base); 
+  font-weight: bold; 
+  color: #fff !important;
+}
+
+/* Título e Formulário */
+h2 { color: #1b1b1b; margin-bottom:1rem; }
+.revela {
+  opacity:0; transform:translateY(30px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.revela.ativo {
+  opacity:1; transform:translateY(0);
+}
+
+.form-label { font-weight:500; }
+.form-control:focus {
+  border-color: var(--sucesso);
+  box-shadow: 0 0 0 .2rem rgba(22,122,58,.25);
+}
+
+/* campos inválidos */
+.form-control.is-invalid {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25) !important;
+}
+
+/* campos válidos */
+.form-control.is-valid {
+  border-color: #28a745 !important;
+  box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .25) !important;
+}
+
+/* Remove ícones de fundo */
+.form-control.is-valid,
+.form-control.is-invalid {
+  background-image: none !important;
+}
+
+/* Botão */
+.btn-sucesso {
+  background: var(--sucesso) !important;
+  color: #fff !important;
+  border: none;
+}
+.btn-sucesso:hover {
+  background: var(--sucesso-claro) !important;
+}
+
+/* Rodapé */
+.bg-escuro { background: #1b1b1b !important; color: #fff; }
