@@ -211,7 +211,9 @@ li {
   background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 1rem 0; /* aba menor */
+  padding: 1rem 0; 
+  border-radius: 20px 20px 0 0;
+  
 }
 
 .newsletter-title {
@@ -287,7 +289,7 @@ li {
 .pitch-video {
   text-align: center;
   padding: 20px 20px;
-  background: #f9f9f9; /* fundo leve para diferenciar do resto */
+  background: #f9f9f9; 
 }
 
 .pitch-video p {
@@ -299,7 +301,7 @@ li {
 .pitch-video a {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #2ecc71; /* verde destaque */
+  background-color: #145a2c; 
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -309,7 +311,7 @@ li {
 }
 
 .pitch-video a:hover {
-  background-color: #27ae60; /* verde mais escuro no hover */
+  background-color: #27ae60; 
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
