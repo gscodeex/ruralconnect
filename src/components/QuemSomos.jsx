@@ -23,7 +23,7 @@ function QuemSomos() {
             <section className="pitch-video">
               <br />
               <p>Assista ao nosso Pitch Vídeo e veja como o RuralConnect evoluiu nesta fase 5.</p>
-              <a href="https://youtube.com/SEU_VIDEO" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtu.be/oNSZi-GdE3U" target="_blank" rel="noopener noreferrer">
                 🎥 Assistir Pitch Vídeo
               </a>
               <br />
